@@ -22,7 +22,11 @@ connectDB();
 // middleware
 app.use(morgan("dev"))
 app.use(bodyParser.json({ limit: '20mb' }))
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+    origin: 'https://loginmern-75b3f.web.app',
+    methods: ['GET', 'POST'],
+}));
 
 // Routes
 // 1
