@@ -12,24 +12,5 @@
         "src": "/(.*)",
         "dest": "server.js"
       }
-    ],
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "https://loginmern-75b3f.web.app"
-          },
-          {
-            "key": "Access-Control-Allow-Headers",
-            "value": "Origin, X-Requested-With, Content-Type, Accept"
-          },
-          {
-            "key": "Access-Control-Allow-Methods",
-            "value": "GET, POST, OPTIONS, PUT, DELETE"
-          }
-        ]
-      }
     ]
   }
