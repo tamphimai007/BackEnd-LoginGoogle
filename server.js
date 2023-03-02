@@ -23,9 +23,7 @@ connectDB();
 app.use(morgan("dev"))
 app.use(bodyParser.json({ limit: '20mb' }))
 // app.use(cors())
-app.use(cors({
-    origin: true
-  }));
+app.use(cors());
 
 // Routes
 // 1
