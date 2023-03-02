@@ -24,6 +24,5 @@
   },
   "engines": {
     "node": "v18.13.0"
-  },
-  "proxy":"https://loginmern-75b3f.web.app"
+  }
 }
