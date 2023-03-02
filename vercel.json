@@ -11,5 +11,28 @@
       "src": "/api/(.*)",
       "dest": "server.js"
     }
+  ],
+  "env": {
+    "EXAMPLE_ENV_VAR": "example-value"
+  },
+  "functions": {
+    "api/current-user": {
+      "memory": 512,
+      "maxDuration": 10,
+      "runtime": "@vercel/node"
+    }
+  },
+  "alias": "example.vercel.app",
+  "public": true,
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://loginmern-75b3f.web.app"
+        }
+      ]
+    }
   ]
 }
