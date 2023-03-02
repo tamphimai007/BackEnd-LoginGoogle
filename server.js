@@ -23,16 +23,9 @@ connectDB();
 app.use(morgan("dev"))
 app.use(bodyParser.json({ limit: '20mb' }))
 // app.use(cors())
-const allowedOrigins = ['https://loginmern-75b3f.web.app', 'http://localhost:3000'];
 app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
-}));
+    origin: true
+  }));
 
 // Routes
 // 1
