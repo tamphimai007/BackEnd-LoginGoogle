@@ -11,16 +11,5 @@
       "src": "/api/(.*)",
       "dest": "server.js"
     }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "https://loginmern-75b3f.web.app"
-        }
-      ]
-    }
   ]
 }
