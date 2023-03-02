@@ -24,7 +24,12 @@ app.use(morgan("dev"))
 app.use(bodyParser.json({ limit: '20mb' }))
 // app.use(cors())
 app.use(cors());
-
+// Add the following middleware to allow CORS requests from all origins
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*"); // allow requests from any origin
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 // Routes
 // 1
 // app.get('/roitai',(req,res)=>{
