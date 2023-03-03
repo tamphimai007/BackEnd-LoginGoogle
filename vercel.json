@@ -13,10 +13,7 @@
       "dest": "server.js",
       "headers": {
         "Access-Control-Allow-Origin": "*"
-      },
-      "methods": [
-        "POST"
-      ]
+      }
     }
   ]
 }
