@@ -24,11 +24,11 @@ app.use(morgan("dev"))
 app.use(bodyParser.json({ limit: '20mb' }))
 // app.use(cors())
 app.use(cors());
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://loginmern-75b3f.web.app"); // Add your origin here
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+// app.use(function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "https://loginmern-75b3f.web.app"); // Add your origin here
+//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//     next();
+//   });
 // Routes
 // 1
 // app.get('/roitai',(req,res)=>{
